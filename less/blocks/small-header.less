@@ -1,0 +1,81 @@
+.small-header {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: black;
+  color: grey;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    height: 30px;
+  }
+
+  & nav > * {
+    flex-shrink: 0;
+  }
+}
+
+.small-header__nav-region {
+  .list-style-none();
+  padding: 0;
+  margin-right: 20px;
+
+  & li {
+    display: inline-block;
+    padding-right: 9px;
+  }
+}
+
+.small-header__nav-region__item {
+  &--active {
+    color: white;
+  }
+}
+
+.small-header__nav-user {
+  position: relative;
+  .list-style-none();
+  margin-right: 20px;
+  padding: 0;
+
+  & li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+.small-header__nav-user__item {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 18px;
+    background-image: url(../../img/header-icons.png);
+  }
+
+  &--ad-place::before {
+    background-position-x: 274px;
+    background-position-y: 1px;
+    left: -22px;
+  }
+
+  &--sign-up::before {
+    background-position-x: 405px;
+    background-position-y: -66px;
+    left: 150px;
+    width: 17px;
+  }
+
+  &--sign-in::before {
+    background-position-x: 81px;
+    background-position-y: 83px;
+    right: 59px;
+  }
+}
+
+.small-header__nav-region li:hover,
+.small-header__nav-user li:hover {
+  cursor: pointer;
+}
