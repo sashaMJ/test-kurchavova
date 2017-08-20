@@ -9,6 +9,7 @@
   font-weight: bold;
   background-color: #3a3a43;
   color: white;
+  padding-right: 24px;
   & > * {
     flex-shrink: 0;
   }
@@ -21,7 +22,7 @@
 
   & li {
     display: inline-block;
-    padding-right: 7px;
+    padding-right: 12px;
   }
 
   & li:nth-child(4) {
@@ -53,22 +54,42 @@
   & a {
     color: white;
     text-decoration: none;
+    font-weight: normal;
   }
 
   &--dotted a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    border-bottom: 1px dotted #fff;
   }
 
   &--special a {
-    color:#ff7d41;
+    color: #ff7d41;
+  }
+
+  & span:hover {
+    color: @yellow-text-color;
+    border-bottom: 3px solid @yellow-text-color;
+    padding-bottom: 12px;
   }
 }
 
-.main-header__absolute-logo svg:hover {
-  fill: #709cff;
+.main-header__absolute-logo svg {
+  margin-right: 10px;
+  &:hover {
+    fill: #709cff;
+  }
 }
 
 .main-header__banner {
   margin-left: auto;
+}
+
+.main-header-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
+  & .main-header__banner{
+    margin-right: 25px;
+  }
 }

@@ -47,25 +47,25 @@
             <nav class="main-header__nav ">
                 <ul class="main-header__nav-menu">
                     <li class="main-header__nav-menu-item main-header__nav-menu-item--dotted">
-                        <a href="#">Продажа</a>
+                        <a href="#"><span>Продажа</span></a>
                     </li>
                     <li class="main-header__nav-menu-item main-header__nav-menu-item--dotted">
-                        <a href="#">Аренда</a>
+                        <a href="#"><span>Аренда</span></a>
                     </li>
                     <li class="main-header__nav-menu-item main-header__nav-menu-item--special">
-                        <a href="#">Спецпредложения</a>
+                        <a href="#"><span>Спецпредложения</span></a>
                     </li>
                     <li class="main-header__nav-menu-item main-header__nav-menu-item--active">
                         <a class="active"><span>Новостройки</span></a>
                     </li>
                     <li class="main-header__nav-menu-item">
-                        <a href="#">Поселки</a>
+                        <a href="#"><span>Посёлки</span></a>
                     </li>
                     <li class="main-header__nav-menu-item">
-                        <a href="#">Риэлторы</a>
+                        <a href="#"><span>Риэлторы</span></a>
                     </li>
                     <li class="main-header__nav-menu-item">
-                        <a href="#">Журнал</a>
+                        <a href="#"><span>Журнал</span></a>
                     </li>
                 </ul>
             </nav>
@@ -153,7 +153,7 @@
                                 подход категорически экономит комплексный медиабизнес. Ценовая стратегия индуцирует
                                 бренд.</p>
                             <span>Узнайте детали акции</span>
-                            <button type="button"><a href="tel:12345678">+7 495 150-ХХ-ХХ</a></button>
+                            <a href="tel:12345678">+7 495 150-ХХ-ХХ</a>
                         </div>
                     </div>
                 </article>
@@ -172,7 +172,12 @@
                                 категорически тормозит процесс стратегического планирования. </p>
                         </div>
                         <div class="content-column__offer-card__counter">
-                            <span>Осталось</span><span>0</span><span>8</span><span> дней</span></div>
+                            <span>Осталось</span>
+                            <div class="content-column__offer-card__counter-days">
+                                <span>0</span><span>8</span>
+                                <span> дней</span>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="content-column__offer-card">
@@ -186,7 +191,12 @@
                                 категорически тормозит процесс стратегического планирования. </p>
                         </div>
                         <div class="content-column__offer-card__counter">
-                            <span>Осталось</span><span>0</span><span>8</span><span> дней</span></div>
+                            <span>Осталось</span>
+                            <div class="content-column__offer-card__counter-days">
+                                <span>0</span><span>8</span>
+                                <span> дней</span>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="content-column__offer-card">
@@ -205,7 +215,12 @@
                                 «Привилегия». </p>
                         </div>
                         <div class="content-column__offer-card__counter">
-                            <span>Осталось</span><span>0</span><span>8</span><span> дней</span></div>
+                            <span>Осталось</span>
+                            <div class="content-column__offer-card__counter-days">
+                                <span>0</span><span>8</span>
+                                <span> дней</span>
+                            </div>
+                        </div>
                     </article>
                 </section>
             </section>
@@ -309,5 +324,8 @@
             </article>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

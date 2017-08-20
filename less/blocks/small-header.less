@@ -26,6 +26,10 @@
     display: inline-block;
     padding-right: 9px;
   }
+
+  & li:hover {
+    color:white;
+  }
 }
 
 .small-header__nav-region__item {
@@ -37,12 +41,15 @@
 .small-header__nav-user {
   position: relative;
   .list-style-none();
-  margin-right: 20px;
   padding: 0;
 
   & li {
     display: inline-block;
-    padding-right: 20px;
+    margin-right: 26px;
+  }
+
+  & li:hover {
+    color:white;
   }
 }
 
@@ -50,6 +57,7 @@
   &::before {
     position: absolute;
     content: "";
+    top: -3px;
     width: 14px;
     height: 18px;
     background-image: url(../../img/header-icons.png);
@@ -58,20 +66,20 @@
   &--ad-place::before {
     background-position-x: 274px;
     background-position-y: 1px;
-    left: -22px;
+    left: -20px;
   }
 
   &--sign-up::before {
     background-position-x: 405px;
     background-position-y: -66px;
-    left: 150px;
+    left: 157px;
     width: 17px;
   }
 
   &--sign-in::before {
-    background-position-x: 81px;
-    background-position-y: 83px;
-    right: 59px;
+    background-position-x: 162px;
+    background-position-y: -33px;
+    right: 67px;
   }
 }
 

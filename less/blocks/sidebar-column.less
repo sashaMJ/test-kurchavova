@@ -7,14 +7,17 @@
 }
 
 .sidebar-column__card {
-  min-height: 256px;
   padding-left: 10px;
   border-bottom: 1px solid darkgrey;
+
+  &:nth-child(1) {
+    min-height: 253px;
+  }
 
   & img {
     border: 1px solid white;
     margin-bottom: 5px;
-    margin-top: 15px;
+    margin-top: 9px;
   }
 
   & span {
@@ -23,6 +26,7 @@
   }
 
   & p {
+    margin-top: 5px;
     font-size: 12px;
     color: grey;
   }
